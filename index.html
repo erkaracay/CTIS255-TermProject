@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>255 Term Project</title>
+    <script src="plugins/jquery-3.6.0.js"></script> <!-- jQuery -->
+    <script src="plugins/jquery.color.min.js"></script> <!-- Color Animation -->
+    <link rel="stylesheet" href="style.css"> <!-- CSS -->
+    <script src="script.js"></script> <!-- JavaScript -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="countdown">
+        <p id="counter">3</p>
+    </div>
+    <div class="bigContainer">
+        <header>
+            <div>
+                <p>HI-SCORE</p><br>
+                <p id="hiScore"></p>
+            </div>
+            <div>
+                <p>SCORE</p><br>
+                <p id="score">0</p>
+            </div>
+            <div>
+                <p>TIME</p><br>
+                <p id="timer">13</p>
+            </div>
+        </header>
+        <div class="gameContainer">
+            <table>
+                <p class="msg" id="startmsg">Tap the black tiles!</p>
+                <p class="msg" id="endmsg">Time is up!</p>
+                <p class="msg" id="hsmsg">New High-Score!</p>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <div id="barContainer">
+                <div id="bar"></div>
+            </div>
+            <p id="playAgain">F5 to play again!</p>
+        </div>
+    </div>
+    <script src="plugins/jquery.confetti.js"></script> <!-- Confetti -->
+</body>
+</html>

@@ -1,0 +1,146 @@
+/* Global Settings */
+* { margin: 0; padding: 0; }
+
+body {
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 400;
+    background: black;
+    margin: 0; padding: 0; 
+}
+
+.bigContainer {
+    width: 600px; height: 100vh;
+    margin: 0 auto;
+    display: none;
+    position: relative;
+    background: white;
+}
+
+/* Messages */
+.msg {
+    position: absolute;
+    font-size: 45px;
+    color: coral;
+    left: 100px;
+    top: 165px;
+    z-index: 1;
+    text-shadow: 3px 3px 5px #000;
+}
+
+#endmsg, #hsmsg {
+    display: none;
+    font-weight: 600;
+    left: 50px; top: 300px;
+    font-size: 60px;
+    text-shadow: 6px 5px 5px #000;
+}
+
+#endmsg {
+    font-size: 80px; 
+    left: 90px;
+}
+
+#playAgain {
+    display: none;
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: 'Gothic A1', sans-serif;
+    opacity: 1.0 ;
+    animation-name: fadeInOut;
+    
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-duration: 0.5s;
+}
+
+@keyframes fadeInOut {
+    0% { font-size: 25px; }
+    50% { font-size: 27px;}
+    100% { font-size: 25px; }
+}
+
+/* Countdown */
+div#countdown {
+    display: flex;
+    width: 600px; height: 600px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background: black ;
+    font-size: 100px;
+    color: cornflowerblue;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    padding-top: 15px;
+}
+
+header div {
+    text-align: center;
+    width: 80px;
+}
+
+header div p:first-of-type {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+header div p:last-of-type {
+    font-size: 45px;
+}
+
+#score {
+    font-size: 65px;
+    color: #5D5;
+}
+
+#timer {
+    color: #D55;
+}
+
+/* Game Area */
+.gameContainer {
+    display: flex; flex-direction: column;
+    align-items: center;
+}
+
+table {
+    width: 500px;
+    border-collapse: collapse;
+    border: 1px solid gray;
+    position: relative;
+    margin-top: 20px;
+}
+
+td {
+    border: 1px solid gray;
+    width: 125px; height: 125px;
+    text-align: center;
+    line-height: 125px;
+}
+
+#barContainer {
+    width: 300px; height: 15px;
+    margin-top: 35px;
+    background: #555;
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+}
+
+#bar {
+    height: 15px;
+    width: 300px;
+    background: crimson;
+}
+
+.points {
+    color: #5D5;
+    font-size: 35px;
+}
